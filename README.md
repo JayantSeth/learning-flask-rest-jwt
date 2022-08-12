@@ -7,3 +7,7 @@ Primary Goals are:
 2. User password should be stored in hashed format.
 3. Try to implement a /refresh_token route
 
+Database Tables:
+
+User: (id, username, email, password)
+

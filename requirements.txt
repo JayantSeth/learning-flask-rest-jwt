@@ -1,0 +1,5 @@
+flask
+Flask-SQLAlchemy
+flask_restful
+bcrypt
+Flask-JWT
