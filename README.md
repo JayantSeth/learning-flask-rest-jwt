@@ -19,3 +19,13 @@ Database Tables:
 
 User: (id, username, email, password)
 
+References:
+```buildoutcfg
+https://blog.teclado.com/jwt-authentication-and-token-refreshing-in-rest-apis/
+https://flask-jwt-extended.readthedocs.io/en/stable/v4_upgrade_guide/
+https://stackoverflow.com/questions/66279295/flask-app-doent-register-jwt-user-lookup-loader-flask-jwt-extended
+https://flask-jwt-extended.readthedocs.io/en/stable/refreshing_tokens/
+https://flask-jwt-extended.readthedocs.io/en/stable/api/
+https://stackoverflow.com/questions/40165665/flask-restful-vs-flask-restplus
+https://flask-jwt-extended.readthedocs.io/en/stable/automatic_user_loading/
+```
