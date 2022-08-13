@@ -1,5 +1,5 @@
-flask
-Flask-SQLAlchemy
-flask_restful
-bcrypt
-Flask-JWT-Extended
+Flask==2.2.2
+Flask-SQLAlchemy==2.5.1
+Flask-RESTful==0.3.9
+bcrypt==3.2.2
+Flask-JWT-Extended==4.4.3

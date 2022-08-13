@@ -1,5 +1,5 @@
 from flask_jwt_extended import (
-    create_refresh_token, create_access_token, get_current_user, jwt_required, get_jwt_identity
+    create_refresh_token, create_access_token, jwt_required, get_jwt_identity
 )
 from flask_restful import Resource
 from flask import request

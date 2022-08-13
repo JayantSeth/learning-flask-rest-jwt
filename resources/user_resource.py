@@ -2,8 +2,8 @@ from flask_restful import Resource
 from models.user import User
 from flask import request
 from flask_jwt_extended import (
-    get_current_user,
-    jwt_required
+    get_jwt_identity,
+    jwt_required,
 )
 
 
@@ -35,8 +35,8 @@ class UserResource(Resource):
             user = User.find_by_name(username)
             if not user:
                 return {"message": f"User: {username} does not exist in database"}, 404
-            current_identity = get_current_user()
-            if current_identity.username != username:
+            current_identity = get_jwt_identity()
+            if current_identity != user.id:
                 return {"message": f"Access Denied, Only the User can updated its profile"}, 400
             user_data = request.get_json()
             if 'username' in user_data:

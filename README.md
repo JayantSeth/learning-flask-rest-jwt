@@ -1,11 +1,19 @@
 # Learning Flask REST JWT Authentication
 
-With this app I plan to learn jwt authentication in Flask App.
-Primary Goals are:
+Learned following concepts:
+1. Flask-JWT-Extended 
 
-1. The app should have /signup, /signin & /signout routes
-2. User password should be stored in hashed format.
-3. Try to implement a /refresh_token route
+This app implements following routes
+1. /signup
+2. /signin
+3. /users
+4. /user/<string:username>
+5. /refresh_token 
+
+Following environment variables must be set before running this app:
+```buildoutcfg
+JWT_SECRET_KEY="<some-random-alpha-numeric-value>"
+```
 
 Database Tables:
 
